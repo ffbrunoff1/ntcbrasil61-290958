@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #57ace1;
+  --secondary: #ffffff;
+  --dark: #0f172a;
+  --light: #f8fafc;
+  --accent: #3b82f6;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Ajuste para o header fixo */
+}
+
+body {
+  @apply bg-light text-dark;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  @apply px-4 mx-auto max-w-7xl;
+}
+
+.section {
+  @apply py-16 md:py-24;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium text-white bg-primary rounded-md shadow-md hover:bg-accent transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center px-6 py-3 text-base font-medium text-primary bg-white border border-primary rounded-md hover:bg-gray-50 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary;
+}
+
+.card {
+  @apply p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300;
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+}
