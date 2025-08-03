@@ -95,7 +95,7 @@ export default function Hero() {
             </motion.a>
             <motion.a
               href="#servicos"
-              className="btn-secondary w-full sm:w-auto"
+              className="btn-secondary bg-gray-200 text-dark border-gray-300 hover:bg-gray-300 w-full sm:w-auto"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
